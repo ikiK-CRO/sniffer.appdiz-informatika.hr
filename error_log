@@ -287,3 +287,38 @@ Stack trace:
 [11-Jun-2021 18:09:10 Europe/Zagreb] PHP Parse error:  syntax error, unexpected '}', expecting ';' in /home/appdizinformatik/sniffer.appdiz-informatika.hr/index.php on line 16
 [11-Jun-2021 18:09:45 Europe/Zagreb] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/appdizinformatik/sniffer.appdiz-informatika.hr/index.php:45) in /home/appdizinformatik/sniffer.appdiz-informatika.hr/index.php on line 44
 [11-Jun-2021 18:09:45 Europe/Zagreb] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/appdizinformatik/sniffer.appdiz-informatika.hr/index.php:45) in /home/appdizinformatik/sniffer.appdiz-informatika.hr/index.php on line 44
+[11-Jun-2021 19:43:15 Europe/Zagreb] PHP Parse error:  syntax error, unexpected end of file in /home/appdizinformatik/sniffer.appdiz-informatika.hr/index.php on line 35
+[11-Jun-2021 19:43:30 Europe/Zagreb] PHP Parse error:  syntax error, unexpected end of file in /home/appdizinformatik/sniffer.appdiz-informatika.hr/index.php on line 35
+[11-Jun-2021 19:45:27 Europe/Zagreb] PHP Parse error:  syntax error, unexpected end of file in /home/appdizinformatik/sniffer.appdiz-informatika.hr/index.php on line 36
+[11-Jun-2021 19:45:37 Europe/Zagreb] PHP Warning:  call_user_func() expects parameter 1 to be a valid callback, array must have exactly two members in /home/appdizinformatik/sniffer.appdiz-informatika.hr/index.php on line 17
+[11-Jun-2021 20:05:27 Europe/Zagreb] PHP Notice:  Undefined offset: 2 in /home/appdizinformatik/sniffer.appdiz-informatika.hr/index.php on line 43
+[11-Jun-2021 20:05:27 Europe/Zagreb] PHP Notice:  Undefined offset: 2 in /home/appdizinformatik/sniffer.appdiz-informatika.hr/index.php on line 43
+[11-Jun-2021 20:05:27 Europe/Zagreb] PHP Notice:  Undefined offset: 2 in /home/appdizinformatik/sniffer.appdiz-informatika.hr/index.php on line 43
+[11-Jun-2021 20:12:43 Europe/Zagreb] PHP Fatal error:  Uncaught Error: Call to undefined function curl_get_contents() in /home/appdizinformatik/sniffer.appdiz-informatika.hr/index.php:63
+Stack trace:
+#0 /home/appdizinformatik/sniffer.appdiz-informatika.hr/index.php(46): imageToBase64('https://germany...')
+#1 {main}
+  thrown in /home/appdizinformatik/sniffer.appdiz-informatika.hr/index.php on line 63
+[11-Jun-2021 20:14:58 Europe/Zagreb] PHP Parse error:  syntax error, unexpected ';', expecting ')' in /home/appdizinformatik/sniffer.appdiz-informatika.hr/index.php on line 46
+[11-Jun-2021 20:25:51 Europe/Zagreb] PHP Notice:  Undefined variable: image in /home/appdizinformatik/sniffer.appdiz-informatika.hr/index.php on line 79
+[11-Jun-2021 20:25:51 Europe/Zagreb] PHP Notice:  Undefined variable: a in /home/appdizinformatik/sniffer.appdiz-informatika.hr/index.php on line 84
+[11-Jun-2021 20:25:51 Europe/Zagreb] PHP Notice:  Undefined variable: image in /home/appdizinformatik/sniffer.appdiz-informatika.hr/index.php on line 79
+[11-Jun-2021 20:25:51 Europe/Zagreb] PHP Notice:  Undefined variable: a in /home/appdizinformatik/sniffer.appdiz-informatika.hr/index.php on line 84
+[11-Jun-2021 20:25:51 Europe/Zagreb] PHP Notice:  Undefined variable: image in /home/appdizinformatik/sniffer.appdiz-informatika.hr/index.php on line 79
+[11-Jun-2021 20:25:51 Europe/Zagreb] PHP Notice:  Undefined variable: a in /home/appdizinformatik/sniffer.appdiz-informatika.hr/index.php on line 84
+[11-Jun-2021 20:26:21 Europe/Zagreb] PHP Notice:  Undefined variable: a in /home/appdizinformatik/sniffer.appdiz-informatika.hr/index.php on line 84
+[11-Jun-2021 20:26:21 Europe/Zagreb] PHP Notice:  Undefined variable: a in /home/appdizinformatik/sniffer.appdiz-informatika.hr/index.php on line 84
+[11-Jun-2021 20:26:21 Europe/Zagreb] PHP Notice:  Undefined variable: a in /home/appdizinformatik/sniffer.appdiz-informatika.hr/index.php on line 84
+[11-Jun-2021 20:27:22 Europe/Zagreb] PHP Fatal error:  Uncaught Error: Call to undefined function curl_get_contents() in /home/appdizinformatik/sniffer.appdiz-informatika.hr/index.php:67
+Stack trace:
+#0 /home/appdizinformatik/sniffer.appdiz-informatika.hr/index.php(49): imageToBase64('RIFF\xE6\x19\x01\x00WEBPVP8...')
+#1 {main}
+  thrown in /home/appdizinformatik/sniffer.appdiz-informatika.hr/index.php on line 67
+[11-Jun-2021 20:27:36 Europe/Zagreb] PHP Notice:  Undefined variable: a in /home/appdizinformatik/sniffer.appdiz-informatika.hr/index.php on line 84
+[11-Jun-2021 20:27:36 Europe/Zagreb] PHP Notice:  Undefined variable: a in /home/appdizinformatik/sniffer.appdiz-informatika.hr/index.php on line 84
+[11-Jun-2021 20:27:36 Europe/Zagreb] PHP Notice:  Undefined variable: a in /home/appdizinformatik/sniffer.appdiz-informatika.hr/index.php on line 84
+[11-Jun-2021 20:28:10 Europe/Zagreb] PHP Warning:  curl_setopt(): Curl option contains invalid characters (\0) in /home/appdizinformatik/sniffer.appdiz-informatika.hr/index.php on line 70
+[11-Jun-2021 20:28:10 Europe/Zagreb] PHP Notice:  Undefined variable: a in /home/appdizinformatik/sniffer.appdiz-informatika.hr/index.php on line 97
+[11-Jun-2021 20:28:10 Europe/Zagreb] PHP Warning:  curl_setopt(): Curl option contains invalid characters (\0) in /home/appdizinformatik/sniffer.appdiz-informatika.hr/index.php on line 70
+[11-Jun-2021 20:28:10 Europe/Zagreb] PHP Notice:  Undefined variable: a in /home/appdizinformatik/sniffer.appdiz-informatika.hr/index.php on line 97
+[11-Jun-2021 20:28:10 Europe/Zagreb] PHP Notice:  Undefined variable: a in /home/appdizinformatik/sniffer.appdiz-informatika.hr/index.php on line 97
