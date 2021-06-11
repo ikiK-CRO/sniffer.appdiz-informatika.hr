@@ -85,3 +85,205 @@ Stack trace:
 [11-Jun-2021 17:33:10 Europe/Zagreb] PHP Warning:  file_get_contents(https://london.zapwp.net/key:51f0429e31298bf7461bed0a35589cb68d1babce/q:intelligent/retina:false/webp:true/w:1/url:https:/vloryas.com/wp-content/uploads/2019/11/h1-testimonials-img-2-1-768x522.jpg): failed to open stream: php_network_getaddresses: getaddrinfo failed: Name or service not known in closure://function ($url) {
     return \file_get_contents($url);
 } on line 3
+[11-Jun-2021 17:55:24 Europe/Zagreb] PHP Parse error:  syntax error, unexpected 'foreach' (T_FOREACH) in /home/appdizinformatik/sniffer.appdiz-informatika.hr/index.php on line 45
+[11-Jun-2021 17:55:36 Europe/Zagreb] PHP Parse error:  syntax error, unexpected 'foreach' (T_FOREACH) in /home/appdizinformatik/sniffer.appdiz-informatika.hr/index.php on line 45
+[11-Jun-2021 17:55:47 Europe/Zagreb] PHP Parse error:  syntax error, unexpected ';' in /home/appdizinformatik/sniffer.appdiz-informatika.hr/index.php on line 46
+[11-Jun-2021 18:03:03 Europe/Zagreb] PHP Warning:  A non-numeric value encountered in closure://function ($url) {
+    $ch = \curl_init();
+
+    \curl_setopt($ch, CURLOPT_URL, $url);
+    \curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+    \curl_setopt($ch, CURLOPT_HEADER, 1);
+
+    $response = \curl_exec($ch);
+
+    $header_size = \curl_getinfo($ch, CURLINFO_HEADER_SIZE);
+    $headers = \substr($response, 0, $header_size);
+    $body = \substr($response, $header_size);
+
+    \curl_close($ch);
+
+    $headers = \explode("\r\n", $headers);
+
+    $headers = \array_filter($headers);
+
+    $html = '';
+    $html = $html+$html;
+    foreach ($headers as &$value) {
+        $html .= '<li>' . $value . '</li>';
+    }
+    $html = '<ol>' . $html . '</ol>';
+
+    \header("Content-Type:text/html; charset=UTF-8");
+    echo $html;
+} on line 22
+[11-Jun-2021 18:03:03 Europe/Zagreb] PHP Warning:  A non-numeric value encountered in closure://function ($url) {
+    $ch = \curl_init();
+
+    \curl_setopt($ch, CURLOPT_URL, $url);
+    \curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+    \curl_setopt($ch, CURLOPT_HEADER, 1);
+
+    $response = \curl_exec($ch);
+
+    $header_size = \curl_getinfo($ch, CURLINFO_HEADER_SIZE);
+    $headers = \substr($response, 0, $header_size);
+    $body = \substr($response, $header_size);
+
+    \curl_close($ch);
+
+    $headers = \explode("\r\n", $headers);
+
+    $headers = \array_filter($headers);
+
+    $html = '';
+    $html = $html+$html;
+    foreach ($headers as &$value) {
+        $html .= '<li>' . $value . '</li>';
+    }
+    $html = '<ol>' . $html . '</ol>';
+
+    \header("Content-Type:text/html; charset=UTF-8");
+    echo $html;
+} on line 22
+[11-Jun-2021 18:03:04 Europe/Zagreb] PHP Warning:  A non-numeric value encountered in closure://function ($url) {
+    $ch = \curl_init();
+
+    \curl_setopt($ch, CURLOPT_URL, $url);
+    \curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+    \curl_setopt($ch, CURLOPT_HEADER, 1);
+
+    $response = \curl_exec($ch);
+
+    $header_size = \curl_getinfo($ch, CURLINFO_HEADER_SIZE);
+    $headers = \substr($response, 0, $header_size);
+    $body = \substr($response, $header_size);
+
+    \curl_close($ch);
+
+    $headers = \explode("\r\n", $headers);
+
+    $headers = \array_filter($headers);
+
+    $html = '';
+    $html = $html+$html;
+    foreach ($headers as &$value) {
+        $html .= '<li>' . $value . '</li>';
+    }
+    $html = '<ol>' . $html . '</ol>';
+
+    \header("Content-Type:text/html; charset=UTF-8");
+    echo $html;
+} on line 22
+[11-Jun-2021 18:03:36 Europe/Zagreb] PHP Parse error:  syntax error, unexpected 'foreach' (T_FOREACH) in /home/appdizinformatik/sniffer.appdiz-informatika.hr/index.php on line 34
+[11-Jun-2021 18:04:29 Europe/Zagreb] PHP Warning:  A non-numeric value encountered in closure://function ($url) {
+    $ch = \curl_init();
+
+    \curl_setopt($ch, CURLOPT_URL, $url);
+    \curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+    \curl_setopt($ch, CURLOPT_HEADER, 1);
+
+    $response = \curl_exec($ch);
+
+    $header_size = \curl_getinfo($ch, CURLINFO_HEADER_SIZE);
+    $headers = \substr($response, 0, $header_size);
+    $body = \substr($response, $header_size);
+
+    \curl_close($ch);
+
+    $headers = \explode("\r\n", $headers);
+
+    $headers = \array_filter($headers);
+
+    foreach ($headers as &$value) {
+        $html .= '<li>' . $value . '</li>';
+    }
+    $html += '<ol>' . $html . '</ol>';
+
+    \header("Content-Type:text/html; charset=UTF-8");
+    return $html;
+} on line 24
+[11-Jun-2021 18:04:29 Europe/Zagreb] PHP Warning:  A non-numeric value encountered in closure://function ($url) {
+    $ch = \curl_init();
+
+    \curl_setopt($ch, CURLOPT_URL, $url);
+    \curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+    \curl_setopt($ch, CURLOPT_HEADER, 1);
+
+    $response = \curl_exec($ch);
+
+    $header_size = \curl_getinfo($ch, CURLINFO_HEADER_SIZE);
+    $headers = \substr($response, 0, $header_size);
+    $body = \substr($response, $header_size);
+
+    \curl_close($ch);
+
+    $headers = \explode("\r\n", $headers);
+
+    $headers = \array_filter($headers);
+
+    foreach ($headers as &$value) {
+        $html .= '<li>' . $value . '</li>';
+    }
+    $html += '<ol>' . $html . '</ol>';
+
+    \header("Content-Type:text/html; charset=UTF-8");
+    return $html;
+} on line 24
+[11-Jun-2021 18:04:29 Europe/Zagreb] PHP Warning:  A non-numeric value encountered in closure://function ($url) {
+    $ch = \curl_init();
+
+    \curl_setopt($ch, CURLOPT_URL, $url);
+    \curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+    \curl_setopt($ch, CURLOPT_HEADER, 1);
+
+    $response = \curl_exec($ch);
+
+    $header_size = \curl_getinfo($ch, CURLINFO_HEADER_SIZE);
+    $headers = \substr($response, 0, $header_size);
+    $body = \substr($response, $header_size);
+
+    \curl_close($ch);
+
+    $headers = \explode("\r\n", $headers);
+
+    $headers = \array_filter($headers);
+
+    foreach ($headers as &$value) {
+        $html .= '<li>' . $value . '</li>';
+    }
+    $html += '<ol>' . $html . '</ol>';
+
+    \header("Content-Type:text/html; charset=UTF-8");
+    return $html;
+} on line 24
+[11-Jun-2021 18:04:29 Europe/Zagreb] PHP Warning:  A non-numeric value encountered in closure://function ($url) {
+    $ch = \curl_init();
+
+    \curl_setopt($ch, CURLOPT_URL, $url);
+    \curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+    \curl_setopt($ch, CURLOPT_HEADER, 1);
+
+    $response = \curl_exec($ch);
+
+    $header_size = \curl_getinfo($ch, CURLINFO_HEADER_SIZE);
+    $headers = \substr($response, 0, $header_size);
+    $body = \substr($response, $header_size);
+
+    \curl_close($ch);
+
+    $headers = \explode("\r\n", $headers);
+
+    $headers = \array_filter($headers);
+
+    foreach ($headers as &$value) {
+        $html .= '<li>' . $value . '</li>';
+    }
+    $html += '<ol>' . $html . '</ol>';
+
+    \header("Content-Type:text/html; charset=UTF-8");
+    return $html;
+} on line 24
+[11-Jun-2021 18:09:10 Europe/Zagreb] PHP Parse error:  syntax error, unexpected '}', expecting ';' in /home/appdizinformatik/sniffer.appdiz-informatika.hr/index.php on line 16
+[11-Jun-2021 18:09:45 Europe/Zagreb] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/appdizinformatik/sniffer.appdiz-informatika.hr/index.php:45) in /home/appdizinformatik/sniffer.appdiz-informatika.hr/index.php on line 44
+[11-Jun-2021 18:09:45 Europe/Zagreb] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/appdizinformatik/sniffer.appdiz-informatika.hr/index.php:45) in /home/appdizinformatik/sniffer.appdiz-informatika.hr/index.php on line 44
