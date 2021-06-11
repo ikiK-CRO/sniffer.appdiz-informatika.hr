@@ -322,3 +322,11 @@ Stack trace:
 [11-Jun-2021 20:28:10 Europe/Zagreb] PHP Warning:  curl_setopt(): Curl option contains invalid characters (\0) in /home/appdizinformatik/sniffer.appdiz-informatika.hr/index.php on line 70
 [11-Jun-2021 20:28:10 Europe/Zagreb] PHP Notice:  Undefined variable: a in /home/appdizinformatik/sniffer.appdiz-informatika.hr/index.php on line 97
 [11-Jun-2021 20:28:10 Europe/Zagreb] PHP Notice:  Undefined variable: a in /home/appdizinformatik/sniffer.appdiz-informatika.hr/index.php on line 97
+[11-Jun-2021 20:46:38 Europe/Zagreb] PHP Notice:  Undefined variable: a in /home/appdizinformatik/sniffer.appdiz-informatika.hr/index.php on line 95
+[11-Jun-2021 20:46:38 Europe/Zagreb] PHP Notice:  Undefined variable: a in /home/appdizinformatik/sniffer.appdiz-informatika.hr/index.php on line 95
+[11-Jun-2021 20:46:38 Europe/Zagreb] PHP Notice:  Undefined variable: a in /home/appdizinformatik/sniffer.appdiz-informatika.hr/index.php on line 95
+[11-Jun-2021 20:53:18 Europe/Zagreb] PHP Notice:  Undefined variable: a in /home/appdizinformatik/sniffer.appdiz-informatika.hr/index.php on line 89
+[11-Jun-2021 20:53:18 Europe/Zagreb] PHP Notice:  Undefined variable: a in /home/appdizinformatik/sniffer.appdiz-informatika.hr/index.php on line 89
+[11-Jun-2021 20:53:18 Europe/Zagreb] PHP Notice:  Undefined variable: a in /home/appdizinformatik/sniffer.appdiz-informatika.hr/index.php on line 89
+[11-Jun-2021 20:59:18 Europe/Zagreb] PHP Notice:  Undefined variable: base in /home/appdizinformatik/sniffer.appdiz-informatika.hr/index.php on line 37
+[11-Jun-2021 21:00:03 Europe/Zagreb] PHP Parse error:  syntax error, unexpected ')', expecting ';' or ',' in /home/appdizinformatik/sniffer.appdiz-informatika.hr/index.php on line 41

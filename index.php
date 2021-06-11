@@ -38,7 +38,7 @@ foreach ($array as $val) {
     // echo $val[1] . '<br>';
     // echo $val[2] . '<br><br>';
     $base =  imageToBase64($val[3]);
-
+    // echo '<img src="' . $base . '" />';
 
     // echo '<img src="' . imageToBase64($val[3]) . '" />';
     // $currentDateTime = date('Y-m-d H:i:s');
