@@ -1,0 +1,87 @@
+[11-Jun-2021 17:01:44 Europe/Zagreb] PHP Fatal error:  Uncaught Error: Call to undefined function Amp\Promise\wait() in /home/appdizinformatik/sniffer.appdiz-informatika.hr/index.php:6
+Stack trace:
+#0 {main}
+  thrown in /home/appdizinformatik/sniffer.appdiz-informatika.hr/index.php on line 6
+[11-Jun-2021 17:05:28 Europe/Zagreb] PHP Warning:  require(/home/appdizinformatik/sniffer.appdiz-informatika.hr/../vendor/autoload.php): failed to open stream: No such file or directory in /home/appdizinformatik/sniffer.appdiz-informatika.hr/index.php on line 2
+[11-Jun-2021 17:05:28 Europe/Zagreb] PHP Fatal error:  require(): Failed opening required '/home/appdizinformatik/sniffer.appdiz-informatika.hr/../vendor/autoload.php' (include_path='.:/opt/alt/php74/usr/share/pear') in /home/appdizinformatik/sniffer.appdiz-informatika.hr/index.php on line 2
+[11-Jun-2021 17:12:49 Europe/Zagreb] PHP Parse error:  syntax error, unexpected '}', expecting ';' or ',' in /home/appdizinformatik/sniffer.appdiz-informatika.hr/index.php on line 16
+[11-Jun-2021 17:15:28 Europe/Zagreb] PHP Warning:  file_get_contents(): php_network_getaddresses: getaddrinfo failed: Name or service not known in closure://function ($url) {
+    return \file_get_contents($url);
+} on line 3
+[11-Jun-2021 17:15:28 Europe/Zagreb] PHP Warning:  file_get_contents(https://london.zapwp.net/key:51f0429e31298bf7461bed0a35589cb68d1babce/q:intelligent/retina:false/webp:true/w:1/url:https:/vloryas.com/wp-content/uploads/2019/11/h1-testimonials-img-2-1-768x522.jpg): failed to open stream: php_network_getaddresses: getaddrinfo failed: Name or service not known in closure://function ($url) {
+    return \file_get_contents($url);
+} on line 3
+[11-Jun-2021 17:15:28 Europe/Zagreb] PHP Warning:  file_get_contents(): php_network_getaddresses: getaddrinfo failed: Name or service not known in closure://function ($url) {
+    return \file_get_contents($url);
+} on line 3
+[11-Jun-2021 17:15:28 Europe/Zagreb] PHP Warning:  file_get_contents(https://newyork.zapwp.net/key:51f0429e31298bf7461bed0a35589cb68d1babce/q:intelligent/retina:false/webp:true/w:1/url:https:/vloryas.com/wp-content/uploads/2019/11/h1-testimonials-img-2-1-768x522.jpg): failed to open stream: php_network_getaddresses: getaddrinfo failed: Name or service not known in closure://function ($url) {
+    return \file_get_contents($url);
+} on line 3
+[11-Jun-2021 17:24:00 Europe/Zagreb] PHP Warning:  file_get_contents(): php_network_getaddresses: getaddrinfo failed: Name or service not known in closure://function ($url) {
+    return \file_get_contents($url);
+} on line 3
+[11-Jun-2021 17:24:00 Europe/Zagreb] PHP Warning:  file_get_contents(https://london.zapwp.net/key:51f0429e31298bf7461bed0a35589cb68d1babce/q:intelligent/retina:false/webp:true/w:1/url:https:/vloryas.com/wp-content/uploads/2019/11/h1-testimonials-img-2-1-768x522.jpg): failed to open stream: php_network_getaddresses: getaddrinfo failed: Name or service not known in closure://function ($url) {
+    return \file_get_contents($url);
+} on line 3
+[11-Jun-2021 17:24:00 Europe/Zagreb] PHP Warning:  file_get_contents(): php_network_getaddresses: getaddrinfo failed: Name or service not known in closure://function ($url) {
+    return \file_get_contents($url);
+} on line 3
+[11-Jun-2021 17:24:00 Europe/Zagreb] PHP Warning:  file_get_contents(https://newyork.zapwp.net/key:51f0429e31298bf7461bed0a35589cb68d1babce/q:intelligent/retina:false/webp:true/w:1/url:https:/vloryas.com/wp-content/uploads/2019/11/h1-testimonials-img-2-1-768x522.jpg): failed to open stream: php_network_getaddresses: getaddrinfo failed: Name or service not known in closure://function ($url) {
+    return \file_get_contents($url);
+} on line 3
+[11-Jun-2021 17:24:00 Europe/Zagreb] PHP Fatal error:  Uncaught Error: Class 'date' not found in /home/appdizinformatik/sniffer.appdiz-informatika.hr/index.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/appdizinformatik/sniffer.appdiz-informatika.hr/index.php on line 20
+[11-Jun-2021 17:24:36 Europe/Zagreb] PHP Warning:  file_get_contents(): php_network_getaddresses: getaddrinfo failed: Name or service not known in closure://function ($url) {
+    return \file_get_contents($url);
+} on line 3
+[11-Jun-2021 17:24:36 Europe/Zagreb] PHP Warning:  file_get_contents(https://newyork.zapwp.net/key:51f0429e31298bf7461bed0a35589cb68d1babce/q:intelligent/retina:false/webp:true/w:1/url:https:/vloryas.com/wp-content/uploads/2019/11/h1-testimonials-img-2-1-768x522.jpg): failed to open stream: php_network_getaddresses: getaddrinfo failed: Name or service not known in closure://function ($url) {
+    return \file_get_contents($url);
+} on line 3
+[11-Jun-2021 17:24:36 Europe/Zagreb] PHP Warning:  file_get_contents(): php_network_getaddresses: getaddrinfo failed: Name or service not known in closure://function ($url) {
+    return \file_get_contents($url);
+} on line 3
+[11-Jun-2021 17:24:36 Europe/Zagreb] PHP Warning:  file_get_contents(https://london.zapwp.net/key:51f0429e31298bf7461bed0a35589cb68d1babce/q:intelligent/retina:false/webp:true/w:1/url:https:/vloryas.com/wp-content/uploads/2019/11/h1-testimonials-img-2-1-768x522.jpg): failed to open stream: php_network_getaddresses: getaddrinfo failed: Name or service not known in closure://function ($url) {
+    return \file_get_contents($url);
+} on line 3
+[11-Jun-2021 17:24:36 Europe/Zagreb] PHP Fatal error:  Uncaught Error: Call to undefined function format() in /home/appdizinformatik/sniffer.appdiz-informatika.hr/index.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/appdizinformatik/sniffer.appdiz-informatika.hr/index.php on line 21
+[11-Jun-2021 17:25:11 Europe/Zagreb] PHP Warning:  file_get_contents(): php_network_getaddresses: getaddrinfo failed: Name or service not known in closure://function ($url) {
+    return \file_get_contents($url);
+} on line 3
+[11-Jun-2021 17:25:11 Europe/Zagreb] PHP Warning:  file_get_contents(https://newyork.zapwp.net/key:51f0429e31298bf7461bed0a35589cb68d1babce/q:intelligent/retina:false/webp:true/w:1/url:https:/vloryas.com/wp-content/uploads/2019/11/h1-testimonials-img-2-1-768x522.jpg): failed to open stream: php_network_getaddresses: getaddrinfo failed: Name or service not known in closure://function ($url) {
+    return \file_get_contents($url);
+} on line 3
+[11-Jun-2021 17:25:11 Europe/Zagreb] PHP Warning:  file_get_contents(): php_network_getaddresses: getaddrinfo failed: Name or service not known in closure://function ($url) {
+    return \file_get_contents($url);
+} on line 3
+[11-Jun-2021 17:25:11 Europe/Zagreb] PHP Warning:  file_get_contents(https://london.zapwp.net/key:51f0429e31298bf7461bed0a35589cb68d1babce/q:intelligent/retina:false/webp:true/w:1/url:https:/vloryas.com/wp-content/uploads/2019/11/h1-testimonials-img-2-1-768x522.jpg): failed to open stream: php_network_getaddresses: getaddrinfo failed: Name or service not known in closure://function ($url) {
+    return \file_get_contents($url);
+} on line 3
+[11-Jun-2021 17:32:37 Europe/Zagreb] PHP Warning:  file_get_contents(): php_network_getaddresses: getaddrinfo failed: Name or service not known in closure://function ($url) {
+    return \file_get_contents($url);
+} on line 3
+[11-Jun-2021 17:32:37 Europe/Zagreb] PHP Warning:  file_get_contents(https://london.zapwp.net/key:51f0429e31298bf7461bed0a35589cb68d1babce/q:intelligent/retina:false/webp:true/w:1/url:https:/vloryas.com/wp-content/uploads/2019/11/h1-testimonials-img-2-1-768x522.jpg): failed to open stream: php_network_getaddresses: getaddrinfo failed: Name or service not known in closure://function ($url) {
+    return \file_get_contents($url);
+} on line 3
+[11-Jun-2021 17:32:37 Europe/Zagreb] PHP Warning:  file_get_contents(): php_network_getaddresses: getaddrinfo failed: Name or service not known in closure://function ($url) {
+    return \file_get_contents($url);
+} on line 3
+[11-Jun-2021 17:32:37 Europe/Zagreb] PHP Warning:  file_get_contents(https://newyork.zapwp.net/key:51f0429e31298bf7461bed0a35589cb68d1babce/q:intelligent/retina:false/webp:true/w:1/url:https:/vloryas.com/wp-content/uploads/2019/11/h1-testimonials-img-2-1-768x522.jpg): failed to open stream: php_network_getaddresses: getaddrinfo failed: Name or service not known in closure://function ($url) {
+    return \file_get_contents($url);
+} on line 3
+[11-Jun-2021 17:33:10 Europe/Zagreb] PHP Warning:  file_get_contents(): php_network_getaddresses: getaddrinfo failed: Name or service not known in closure://function ($url) {
+    return \file_get_contents($url);
+} on line 3
+[11-Jun-2021 17:33:10 Europe/Zagreb] PHP Warning:  file_get_contents(https://newyork.zapwp.net/key:51f0429e31298bf7461bed0a35589cb68d1babce/q:intelligent/retina:false/webp:true/w:1/url:https:/vloryas.com/wp-content/uploads/2019/11/h1-testimonials-img-2-1-768x522.jpg): failed to open stream: php_network_getaddresses: getaddrinfo failed: Name or service not known in closure://function ($url) {
+    return \file_get_contents($url);
+} on line 3
+[11-Jun-2021 17:33:10 Europe/Zagreb] PHP Warning:  file_get_contents(): php_network_getaddresses: getaddrinfo failed: Name or service not known in closure://function ($url) {
+    return \file_get_contents($url);
+} on line 3
+[11-Jun-2021 17:33:10 Europe/Zagreb] PHP Warning:  file_get_contents(https://london.zapwp.net/key:51f0429e31298bf7461bed0a35589cb68d1babce/q:intelligent/retina:false/webp:true/w:1/url:https:/vloryas.com/wp-content/uploads/2019/11/h1-testimonials-img-2-1-768x522.jpg): failed to open stream: php_network_getaddresses: getaddrinfo failed: Name or service not known in closure://function ($url) {
+    return \file_get_contents($url);
+} on line 3
