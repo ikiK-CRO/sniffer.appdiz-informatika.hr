@@ -14,85 +14,53 @@ $array = wait(parallelMap([
 ], function ($url) {
     $ch = curl_init();
 
-    $optArray = array(
-        CURLOPT_URL => $url,
-        CURLOPT_RETURNTRANSFER => true
-    );
+    curl_setopt($ch, CURLOPT_URL, $url);
+    curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+    curl_setopt($ch, CURLOPT_HEADER, 0);
+    curl_setopt($ch, CURLOPT_URL, $url);
 
-    curl_setopt_array($ch, $optArray);
 
     $result = curl_exec($ch);
 
     $response = curl_getinfo($ch, CURLINFO_HTTP_CODE);
     $header_size = curl_getinfo($ch, CURLINFO_HEADER_SIZE);
     $contentType = curl_getinfo($ch, CURLINFO_CONTENT_TYPE);
+
+
+    $currentDateTime = date('Y-m-d H:i:s');
+
+
     curl_close($ch);
 
-    $res = array($response, $header_size, $contentType, $url);
-    // var_dump($errors);
+    $res = array($response, $header_size, $contentType, $url, $result, $currentDateTime);
     return $res;
 }));
 
 foreach ($array as $val) {
-    // echo $val[0] . '<br>';
-    // echo $val[1] . '<br>';
-    // echo $val[2] . '<br><br>';
-    $base =  imageToBase64($val[3]);
-    // echo '<img src="' . $base . '" />';
+    echo 'Response Code: ' . $val[0] . '<br>';
+    echo 'Response Size: ' . $val[1] . '<br>';
+    echo 'Request Time: ' . $val[5] . '<br>';
+    echo 'Response Type: ' . $val[2] . '<br><br>';
+    $base =  imageToBase64($val[4]);
+    echo '<img src="' . $base . '" />';
 
-    // echo '<img src="' . imageToBase64($val[3]) . '" />';
-    // $currentDateTime = date('Y-m-d H:i:s');
-    // echo $currentDateTime;
-
-    if ($val[0] != 0) {
-        $sql = "INSERT INTO snif (snif_time, snif_code, snif_size, snif_type, snif_base64) VALUES (NOW(), '$val[0]', '$val[1]' , '$val[2]', '$base')";
-
-        if ($con->query($sql) === TRUE) {
-            echo "true";
-        } else {
-            echo "Error: " . $sql . "<br>" . $con->error;
-        }
-    } else {
+    if ($val[0] != 200) {
         $msg = "Error \n code 0";
         $msg = wordwrap($msg, 70);
         mail("kiki.ikik@gmail.com", "Sniffer Error", $msg);
+    } else {
+        $sql = "INSERT INTO snif (snif_time, snif_code, snif_size, snif_type, snif_base64) VALUES ('$val[5]', '$val[0]', '$val[1]' , '$val[2]', '$base')";
+
+        if ($con->query($sql) === TRUE) {
+            echo "true<br><br>";
+        } else {
+            echo "Error: " . $sql . "<br>" . $con->error;
+        }
     }
-}
-
-function curl_get_contents($url)
-{
-    $ch = curl_init();
-
-    curl_setopt($ch, CURLOPT_HEADER, 0);
-    curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
-    curl_setopt($ch, CURLOPT_URL, $url);
-
-    $data = curl_exec($ch);
-    curl_close($ch);
-
-    return $data;
 }
 
 function imageToBase64($image)
 {
-    $imageData = base64_encode(curl_get_contents($image));
-    $mime_types = array(
-        'pdf' => 'application/pdf',
-        'doc' => 'application/msword',
-        'odt' => 'application/vnd.oasis.opendocument.text ',
-        'docx'    => 'application/vnd.openxmlformats-officedocument.wordprocessingml.document',
-        'gif' => 'image/gif',
-        'jpg' => 'image/jpg',
-        'jpeg' => 'image/jpeg',
-        'png' => 'image/png',
-        'bmp' => 'image/bmp'
-    );
-    $ext = pathinfo($image, PATHINFO_EXTENSION);
-
-    if (array_key_exists($ext, $mime_types)) {
-        $a = $mime_types[$ext];
-    }
-    return 'data: ' . $a . ';base64,' . $imageData;
+    $imageData = base64_encode($image);
+    return 'data: image/jpg;base64,' . $imageData;
 }
-
-// How To Use it

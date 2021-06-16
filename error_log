@@ -346,3 +346,22 @@ Stack trace:
 Stack trace:
 #0 {main}
   thrown in /home/appdizinformatik/sniffer.appdiz-informatika.hr/index.php on line 50
+[16-Jun-2021 13:02:57 Europe/Zagreb] PHP Fatal error:  Uncaught Error: Call to undefined function curl_get_contents() in /home/appdizinformatik/sniffer.appdiz-informatika.hr/index.php:80
+Stack trace:
+#0 /home/appdizinformatik/sniffer.appdiz-informatika.hr/index.php(42): imageToBase64('RIFF\xE6\x19\x01\x00WEBPVP8...')
+#1 {main}
+  thrown in /home/appdizinformatik/sniffer.appdiz-informatika.hr/index.php on line 80
+[16-Jun-2021 13:03:19 Europe/Zagreb] PHP Fatal error:  Uncaught Error: Call to undefined function curl_get_contents() in /home/appdizinformatik/sniffer.appdiz-informatika.hr/index.php:80
+Stack trace:
+#0 /home/appdizinformatik/sniffer.appdiz-informatika.hr/index.php(42): imageToBase64('RIFF\xE6\x19\x01\x00WEBPVP8...')
+#1 {main}
+  thrown in /home/appdizinformatik/sniffer.appdiz-informatika.hr/index.php on line 80
+[16-Jun-2021 13:03:38 Europe/Zagreb] PHP Notice:  Undefined variable: a in /home/appdizinformatik/sniffer.appdiz-informatika.hr/index.php on line 94
+[16-Jun-2021 13:03:38 Europe/Zagreb] PHP Notice:  Undefined variable: a in /home/appdizinformatik/sniffer.appdiz-informatika.hr/index.php on line 94
+[16-Jun-2021 13:03:38 Europe/Zagreb] PHP Notice:  Undefined variable: a in /home/appdizinformatik/sniffer.appdiz-informatika.hr/index.php on line 94
+[16-Jun-2021 13:03:58 Europe/Zagreb] PHP Notice:  Undefined variable: a in /home/appdizinformatik/sniffer.appdiz-informatika.hr/index.php on line 94
+[16-Jun-2021 13:03:58 Europe/Zagreb] PHP Notice:  Undefined variable: a in /home/appdizinformatik/sniffer.appdiz-informatika.hr/index.php on line 94
+[16-Jun-2021 13:03:58 Europe/Zagreb] PHP Notice:  Undefined variable: a in /home/appdizinformatik/sniffer.appdiz-informatika.hr/index.php on line 94
+[16-Jun-2021 13:08:35 Europe/Zagreb] PHP Notice:  Undefined variable: a in /home/appdizinformatik/sniffer.appdiz-informatika.hr/index.php on line 94
+[16-Jun-2021 13:08:35 Europe/Zagreb] PHP Notice:  Undefined variable: a in /home/appdizinformatik/sniffer.appdiz-informatika.hr/index.php on line 94
+[16-Jun-2021 13:08:35 Europe/Zagreb] PHP Notice:  Undefined variable: a in /home/appdizinformatik/sniffer.appdiz-informatika.hr/index.php on line 94
