@@ -1,6 +1,6 @@
 CREATE TABLE `snif` (
     `snif_id` int(11) NOT NULL AUTO_INCREMENT,
-    `snif_time` varchar(255) NULL,
+    `snif_time` DATETIME NULL,
     `snif_code` varchar(255) NULL,
     `snif_size` varchar(255) NULL,
     `snif_type` varchar(255) NULL,
