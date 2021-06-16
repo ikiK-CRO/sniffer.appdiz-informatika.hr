@@ -42,19 +42,19 @@ foreach ($array as $val) {
     echo 'Request Time: ' . $val[5] . '<br>';
     echo 'Response Type: ' . $val[2] . '<br><br>';
     $base =  imageToBase64($val[4]);
-    echo '<img src="' . $base . '" />';
-
     if ($val[0] != 200) {
         $msg = "Error \n code 0";
         $msg = wordwrap($msg, 70);
         mail("kiki.ikik@gmail.com", "Sniffer Error", $msg);
+        echo 'Email sent...<br>';
     } else {
         $sql = "INSERT INTO snif (snif_time, snif_code, snif_size, snif_type, snif_base64) VALUES ('$val[5]', '$val[0]', '$val[1]' , '$val[2]', '$base')";
 
         if ($con->query($sql) === TRUE) {
-            echo "true<br><br>";
+            echo "DB INSERT RESPONSE: true<br><br>";
+            echo '<img src="' . $base . '" /><br>';
         } else {
-            echo "Error: " . $sql . "<br>" . $con->error;
+            echo "DB INSERT RESPONSE: Error: " . $sql . "<br>" . $con->error;
         }
     }
 }
