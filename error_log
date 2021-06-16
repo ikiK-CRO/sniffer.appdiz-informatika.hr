@@ -330,3 +330,19 @@ Stack trace:
 [11-Jun-2021 20:53:18 Europe/Zagreb] PHP Notice:  Undefined variable: a in /home/appdizinformatik/sniffer.appdiz-informatika.hr/index.php on line 89
 [11-Jun-2021 20:59:18 Europe/Zagreb] PHP Notice:  Undefined variable: base in /home/appdizinformatik/sniffer.appdiz-informatika.hr/index.php on line 37
 [11-Jun-2021 21:00:03 Europe/Zagreb] PHP Parse error:  syntax error, unexpected ')', expecting ';' or ',' in /home/appdizinformatik/sniffer.appdiz-informatika.hr/index.php on line 41
+[14-Jun-2021 22:00:28 Europe/Zagreb] PHP Warning:  require(db.php): failed to open stream: No such file or directory in /home/appdizinformatik/sniffer.appdiz-informatika.hr/index.php on line 4
+[14-Jun-2021 22:00:28 Europe/Zagreb] PHP Fatal error:  require(): Failed opening required 'db.php' (include_path='.:/opt/alt/php74/usr/share/pear') in /home/appdizinformatik/sniffer.appdiz-informatika.hr/index.php on line 4
+[14-Jun-2021 22:00:28 Europe/Zagreb] PHP Warning:  require(db.php): failed to open stream: No such file or directory in /home/appdizinformatik/sniffer.appdiz-informatika.hr/index.php on line 4
+[14-Jun-2021 22:00:28 Europe/Zagreb] PHP Fatal error:  require(): Failed opening required 'db.php' (include_path='.:/opt/alt/php74/usr/share/pear') in /home/appdizinformatik/sniffer.appdiz-informatika.hr/index.php on line 4
+[16-Jun-2021 12:49:59 Europe/Zagreb] PHP Warning:  require(db.php): failed to open stream: No such file or directory in /home/appdizinformatik/sniffer.appdiz-informatika.hr/index.php on line 4
+[16-Jun-2021 12:49:59 Europe/Zagreb] PHP Fatal error:  require(): Failed opening required 'db.php' (include_path='.:/opt/alt/php74/usr/share/pear') in /home/appdizinformatik/sniffer.appdiz-informatika.hr/index.php on line 4
+[16-Jun-2021 12:55:04 Europe/Zagreb] PHP Warning:  mysqli_connect(): (28000/1045): Access denied for user 'appdizinformatik_sniffer'@'localhost' (using password: YES) in /home/appdizinformatik/sniffer.appdiz-informatika.hr/db.php on line 3
+[16-Jun-2021 12:55:06 Europe/Zagreb] PHP Fatal error:  Uncaught Error: Call to a member function query() on bool in /home/appdizinformatik/sniffer.appdiz-informatika.hr/index.php:50
+Stack trace:
+#0 {main}
+  thrown in /home/appdizinformatik/sniffer.appdiz-informatika.hr/index.php on line 50
+[16-Jun-2021 12:55:48 Europe/Zagreb] PHP Warning:  mysqli_connect(): (28000/1045): Access denied for user 'appdizinformatik_sniffer'@'localhost' (using password: YES) in /home/appdizinformatik/sniffer.appdiz-informatika.hr/db.php on line 3
+[16-Jun-2021 12:55:49 Europe/Zagreb] PHP Fatal error:  Uncaught Error: Call to a member function query() on bool in /home/appdizinformatik/sniffer.appdiz-informatika.hr/index.php:50
+Stack trace:
+#0 {main}
+  thrown in /home/appdizinformatik/sniffer.appdiz-informatika.hr/index.php on line 50
