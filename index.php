@@ -19,16 +19,13 @@ $array = wait(parallelMap([
     curl_setopt($ch, CURLOPT_HEADER, 0);
     curl_setopt($ch, CURLOPT_URL, $url);
 
-
     $result = curl_exec($ch);
 
     $response = curl_getinfo($ch, CURLINFO_HTTP_CODE);
     $header_size = curl_getinfo($ch, CURLINFO_HEADER_SIZE);
     $contentType = curl_getinfo($ch, CURLINFO_CONTENT_TYPE);
 
-
     $currentDateTime = date('Y-m-d H:i:s');
-
 
     curl_close($ch);
 
@@ -41,7 +38,9 @@ foreach ($array as $val) {
     echo 'Response Size: ' . $val[1] . '<br>';
     echo 'Request Time: ' . $val[5] . '<br>';
     echo 'Response Type: ' . $val[2] . '<br><br>';
+
     $base =  imageToBase64($val[4]);
+
     if ($val[0] != 200) {
         $msg = "Error \n code 0";
         $msg = wordwrap($msg, 70);
