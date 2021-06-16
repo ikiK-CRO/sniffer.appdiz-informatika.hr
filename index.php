@@ -36,7 +36,7 @@ $array = wait(parallelMap([
 foreach ($array as $val) {
     echo 'Response Code: ' . $val[0] . '<br>';
     echo 'Response Size: ' . $val[1] . '<br>';
-    echo 'Request Time: ' . $val[5] . '<br>';
+    echo 'Response Time: ' . $val[5] . '<br>';
     echo 'Response Type: ' . $val[2] . '<br><br>';
 
     $base =  imageToBase64($val[4]);
