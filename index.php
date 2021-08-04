@@ -47,7 +47,7 @@ foreach ($array as $val) {
     if ($val[0] != 200) {
         $msg = "Error \n code 0";
         $msg = wordwrap($msg, 70);
-        mail("kiki.ikik@gmail.com", "Sniffer Error", $msg);
+       // mail("xxx", "Sniffer Error", $msg);
         echo 'Email sent...<br>';
     } else {
         $sql = "INSERT INTO snif (snif_time, snif_code, snif_size, snif_type, snif_base64) VALUES ('$val[5]', '$val[0]', '$val[1]' , '$val[2]', '$base')";
